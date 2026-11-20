@@ -147,7 +147,6 @@ public class BasketsController : BaseController
             Secure = true,
             SameSite = SameSiteMode.None,
             IsEssential = true,
-            Domain = "localhost",
             Path = "/",
             Expires = expired ? DateTimeOffset.UtcNow.AddDays(-1) : DateTimeOffset.UtcNow.Add(BasketService.GetBasketTtl())
         };
@@ -165,7 +164,8 @@ public class BasketsController : BaseController
             "http://localhost:4200",
             "http://localhost:52945",
             "https://localhost:4200",
-            "https://localhost:52945"
+            "https://localhost:52945",
+            "https://e-commerce-platform-one-lyart.vercel.app"
         };
 
         var origin = Request.Headers.Origin.ToString();

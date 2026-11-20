@@ -72,7 +72,6 @@ public class AccountController : BaseController
             Secure = true,
             SameSite = SameSiteMode.None,
             IsEssential = true,
-            Domain = "localhost",
             Expires = DateTime.Now.AddDays(-1)
         });
 
@@ -135,7 +134,6 @@ public class AccountController : BaseController
             Secure = true,
             SameSite = SameSiteMode.None,
             IsEssential = true,
-            Domain = "localhost",
             Expires = DateTime.Now.AddDays(1)
         });
 

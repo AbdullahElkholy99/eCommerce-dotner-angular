@@ -29,7 +29,6 @@ builder.Services.AddAntiforgery(options =>
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
     options.Cookie.SameSite = SameSiteMode.None;
     options.Cookie.Path = "/";
-    options.Cookie.Domain = "localhost";
     options.Cookie.IsEssential = true;
 });
 
@@ -38,7 +37,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORSPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:4200", "http://localhost:52945")
+        policy.WithOrigins(
+                "http://localhost:4200",
+                "http://localhost:52945",
+                "https://e-commerce-platform-one-lyart.vercel.app"
+          )
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();

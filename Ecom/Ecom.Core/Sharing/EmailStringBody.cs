@@ -33,7 +33,7 @@ public class EmailStringBody
                                 <h1>{message}</h1>
                                         <hr>
                                      <br>
-                                    <a class=""button"" href=""http://localhost:4200/Account/{component}?email={email}&code={encodeToken}"">
+                                    <a class=""button"" href=""https://e-commerce-platform-one-lyart.vercel.app/Account/{component}?email={email}&code={encodeToken}"">
                                             {message}
                                         </a>
                             </body>
