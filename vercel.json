@@ -1,0 +1,19 @@
+{
+  "framework": "angular",
+  "functions": {
+    "api": {
+      "runtime": "node20",
+      "imports": ["dist/client/server/server.mjs"]
+    }
+  },
+  "routes": [
+    {
+      "source": "/api/(.*)",
+      "dest": "api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
