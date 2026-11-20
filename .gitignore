@@ -137,7 +137,6 @@ Publish/
 *.csproj
 
 # Package manifests (keep for dependency management)
-package-lock.json
 yarn.lock
 *pnpm-lockfile
 
