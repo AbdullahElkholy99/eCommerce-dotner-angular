@@ -130,12 +130,7 @@ Publish/
 # ============================================================
 # Keep Version Controlled
 # ============================================================
-# Solution file
-*.sln
-
-# Project files
-*.csproj
-
+ 
 # Package manifests (keep for dependency management)
 yarn.lock
 *pnpm-lockfile
