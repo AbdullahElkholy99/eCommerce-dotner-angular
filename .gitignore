@@ -1,0 +1,149 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# ============================================================
+# .NET Specific
+# ============================================================
+# Bin and Output Folders (match at any level)
+**/bin/**
+**/obj*/
+
+# Visual Studio / IDE
+*.user
+*.suo
+*.userossettings
+*.authinfo
+.vs/
+_TestResults/
+/TestResults/
+
+# Publish Output
+*.deploy
+Publish/
+
+# NuGet Packages
+*.nuget.core
+
+# Local History
+**/.localhistory/
+
+# The following is found in many .NET projects
+# User-specific files
+*.lnk
+
+# Debug/Release folders
+/Debug
+/Release
+
+# Coverage folders
+.coverage
+*.coverage
+
+# ROSlyn analyzer cache
+**.cosun
+
+# ============================================================
+# Angular / Node Specific
+# ============================================================
+/node_modules/
+/dist/
+/*.tsbuildinfo
+/.angular/
+/coverage/
+/npm-debug.log
+/yarn-error.log
+
+# IDE and editor directories
+/.idea/
+/.project
+/.classpath
+/settings/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System files
+/.DS_Store
+/Thumbs.db
+
+# Miscellaneous
+/tmp
+/out-tsc
+/bazel-out
+
+# Angular CLI
+/.angular/cache
+
+# Environment files (never commit real secrets)
+/.env
+/.env.*
+/.env.example  # Example template - keep this, but ensure it has no real credentials
+
+# ============================================================
+# ASP.NET Core Specific
+# ============================================================
+# User Secrets (never commit)
+/.secrets.json
+
+# Temp files
+/tmp
+
+# ============================================================
+# Database
+# ============================================================
+# SQL Server data files and backups
+*.mdf
+*.ldf
+*.bak
+*.sql
+*.db backup
+
+# Entity Framework Migrations Snapshot (safe to commit - contains schema, not data)
+**/Data/Migrations/*Snapshot*.cs
+
+# ============================================================
+# Uploads and User Content
+# ============================================================
+# Uploads directory - keep this excluded as user-generated content
+/uploads/*
+/user-content/*
+
+# But allow specific folders if needed
+!/uploads/.gitkeep
+!/user-content/.gitkeep
+
+# ============================================================
+# Images and Media (generated/derived)
+# ============================================================
+/Images/*
+/!/Images/.gitkeep
+
+# ============================================================
+# Test Results and Artifacts
+# ============================================================
+/test-results/
+**/test-results/
+/*.json
+/.last-run.json
+
+# ============================================================
+# Keep Version Controlled
+# ============================================================
+# Solution file
+*.sln
+
+# Project files
+*.csproj
+
+# Package manifests (keep for dependency management)
+package-lock.json
+yarn.lock
+*pnpm-lockfile
+
+# Note: The following should NEVER be ignored (source files):
+# - .cs source files
+# - .ts source files
+# - .json config templates (appsettings.Example.json)
+# - Migrations code (not snapshot binaries)
+# - Documentation

@@ -1,0 +1,21 @@
+﻿global using AutoMapper;
+global using Ecom.Core.DTO;
+global using Ecom.Core.Entity.Product;
+global using Ecom.Core.Interfaces;
+global using Ecom.Core.Services;
+global using Ecom.Infrastructure.Data;
+global using Microsoft.EntityFrameworkCore;
+global using Ecom.Infrastructure.Repositories;
+global using Ecom.Infrastructure.Repositories.Service;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.FileProviders;
+global using StackExchange.Redis;
+global using Ecom.Core.Entity.Account;
+global using Microsoft.AspNetCore.Authentication.Cookies;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.IdentityModel.Tokens;
+global using System.Text;
+
